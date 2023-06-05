@@ -3,7 +3,7 @@ title: "Aidan Berg's Blog"
 #image: ""
 links:
   - label: Back to Homepage
-    url: "https://github.com/"
+    url: "https://aidanberg.us/"
 
 output:
   postcards::trestles
@@ -11,4 +11,6 @@ output:
  
 ## Latest Post:
 
-## Archive, in descending order
+[First Post](https://aidanberg.us/blog/first-post)
+
+## Archive, in ascending order
