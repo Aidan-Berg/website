@@ -1,0 +1,50 @@
+---
+title: "Plotting the Plots"
+description: |
+  Let's explore the Morrow Plots data using ggplot.
+author:
+  - name: Aidan Berg 
+    url: https://aidanberg.us/
+date: "`r Sys.Date()`"
+output: distill::distill_article
+bibliography: MorrowData.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+corn <- read_csv("C:/Users/Aidan Berg/Downloads/morrow-plots_v01_1888-2021_soil.csv")
+```
+
+Hello,
+
+As promised, I found a dataset worth plotting and looking into, and fortunately it's a dataset that needs to graphs to be interesting: the [Morrow Plots data](https://databank.illinois.edu/datasets/IDB-7865141). The Morrow Plots are a set of small fields between the main and south Quads of the University of Illinois at Urbana-Champaign, and have been continuously maintained since 1876(!), the oldest such experiment on soil nutrition in the world. Since many of the experiment years predate computers (and radios, and cars, and electricity), the data was unavailable to a small subset of researchers who had access to the written data. Fortunately, the process of digitizing the data began in 2018, and in 2023, the data was published, at the link above. 
+
+Either way, let's import the data and take a look at what we have.
+
+
+```{r, echo = F}
+head(corn)
+```
+
+Okay, so we have a lot to choose from! It looks as though some of the variables like manure (the amount of manure applied to the plot that year), and population (number of plants based on counts from hand harvesting) are largely missing, so for now, we will ignore those [@illinoisdatabankIDB-7865141]^[For some reason, R markdown does not like .bib files. My apologies to the Morrow Plots Data Curation Working Group, who here are only known as "Group".]. Phase is an interesting variable: in the beginning, there were only three plots at the Morrow Plots, as more variables were added, the plots were subdivided from 3 to 12 to 24  from phases I through III^[There is a phase IV and V, but these only involve changes in variables, not plot size.]. At first, this was alarming! I wanted to plant yield over time, and if the plots were subdivided, it wouldn't make any sense to compare a third of the Morrow Plots to just $\frac{1}{73}$ of the plot! Luckily for me, the Data Curation Group are excellent data scientists, and published a tidy dataset!
+
+
+
+To start off lightly, let's just subset the data from one plot and see how it's yield (in bushels) has changed over time:
+
+```{r}
+MorrowPlot3NA <- as_tibble(corn) %>% filter(plot == "3NA")
+plot1 <- ggplot(data = MorrowPlot3NA, aes(x = year, y = yield_bush)) + 
+  geom_line() + 
+  geom_point() + 
+  labs(x = "Year",
+       y = "Yield in Bushels",
+       title = "Morrow Plot 3NA bushel yield over time")
+plot1
+```
+
+
+
+
+
