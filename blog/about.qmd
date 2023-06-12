@@ -1,19 +1,14 @@
 ---
 title: "About"
-image: profile.jpg
+image: headshot.png
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - text: Website
+      href: https://aidanberg.us/
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
-
+      href: https://www.linkedin.com/in/aidan-berg-epi/
 ---
 
-About this blog
+Welcome to my blog! Here, I discuss my independent work in data science and public health, hoping to build a portfolio and, more importantly, educate myself about data science and it's applications to epidemiology.
