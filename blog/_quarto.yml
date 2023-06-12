@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Aidan Berg's Blog"
+  site-url: https://aidanberg.us/blog/
   navbar:
     right:
       - about.qmd
@@ -10,6 +11,8 @@ website:
         href: https://github.com/Aidan-Berg
       - icon: linkedin
         href: https://www.linkedin.com/in/aidan-berg-epi/
+      - icon: rss
+      - href: index.yml
 format:
   html:
     theme: zephyr
