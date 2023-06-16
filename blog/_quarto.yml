@@ -1,0 +1,20 @@
+project:
+  type: website
+website:
+  title: "Aidan Berg"
+  site-url: https://aidanberg.us/
+  description: "A quiet blog discussing data"
+  navbar:
+    right:
+      - about.qmd
+      - icon: linkedin
+        text: LinkedIn
+        href: "https://www.linkedin.com/in/aidan-berg-epi/"
+      - icon: rss
+        href: index.xml
+format:
+  html:
+    theme: litera
+    css: styles.css
+
+editor: visual
