@@ -3,7 +3,7 @@
     "path": "C:/Users/Aidan Berg/Documents/GitHub/website/blog/index.qmd",
     "project_path": "blog/index.qmd",
     "type": "quarto_markdown",
-    "hash": "2943863342",
+    "hash": "3552316009",
     "contents": "",
     "dirty": false,
     "created": 1686924349830.0,
@@ -19,14 +19,14 @@
         "rmdVisualCollapsedChunks": "",
         "cursorPosition": "0,0",
         "scrollLine": "0",
-        "rmdVisualModeLocation": "162:0"
+        "rmdVisualModeLocation": "416:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1686925372,
+    "lastKnownWriteTime": 1686925572,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1686925372201,
+    "last_content_update": 1686925572740,
     "read_only": false,
     "read_only_alternatives": []
 }

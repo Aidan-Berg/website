@@ -12,14 +12,13 @@ website:
         href: "https://www.linkedin.com/in/aidan-berg-epi/"
       - icon: rss
         href: index.xml
-
+  format:
+    html:
+      theme: litera
+      css: styles.css
   listing:
     contents: posts
     sort: 
       - "date"
       - "title desc"
-  format:
-    html:
-      theme: litera
-      css: styles.css
 ---
