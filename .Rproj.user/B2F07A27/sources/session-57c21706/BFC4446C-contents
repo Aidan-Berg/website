@@ -7,7 +7,6 @@ website:
   description: "A quiet blog discussing data"
   navbar:
     right:
-      - about.qmd
       - icon: linkedin
         text: LinkedIn
         href: "https://www.linkedin.com/in/aidan-berg-epi/"
