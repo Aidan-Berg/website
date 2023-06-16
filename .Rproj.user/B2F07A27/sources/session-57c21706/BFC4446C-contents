@@ -1,0 +1,9 @@
+---
+title: "Blog Landing"
+author: "Aidan Berg"
+listing:
+  contents: posts
+  sort: 
+    - "date"
+    - "title desc"
+---
