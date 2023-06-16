@@ -6,8 +6,7 @@ links:
     url: "https://www.linkedin.com/in/aidan-berg-epi/"
   - label: Email
     url: "mailto:bergaidanj@gmail.com"
-  - label: Blog
-    url: "https://aidanberg.us/blog"
+
 output:
   postcards::trestles
 ---
